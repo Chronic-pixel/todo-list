@@ -1,0 +1,20 @@
+{
+    // Habilita o Prettier como o formatador padrão
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+    // Formatar automaticamente ao salvar
+    "editor.formatOnSave": true,
+  
+    // Habilitar formatação enquanto digita
+    "editor.formatOnType": true,
+  
+    // Prettier será ativado somente se o projeto tiver o arquivo de configuração `.prettierrc`
+    "prettier.requireConfig": true,
+  
+    // Configurações específicas para JSX e React
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.preferences.quoteStyle": "single",
+    "react/jsx-sort-props": "always",  // Opcional, mas boa prática
+    "editor.formatOnSaveMode": "file"   // Usa o Prettier para formatar arquivos ao salvar
+  }
+  
