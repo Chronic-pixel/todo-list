@@ -1,28 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(241, 241, 241);
+  padding: 30px;
+  color: aliceblue;
+  background-image: url('./img/kevin-james-meme-1749606876.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.App {
+  
+  max-width: 600px;
+  margin: 0 auto 600px;
+  background-color: rgba(111, 116, 131, 0.452);
+ 
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  
+}
+h1 {
   text-align: center;
+  
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin: 10px 0;
+  font-weight: bold;
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  background-color: rgb(90, 88, 230);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: aliceblue;
+  font-weight: bold;
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  transition: 0.5s;
+  background-color: rgb(58, 56, 192);
+  color: rgb(255, 255, 255);
 }
 
-.read-the-docs {
-  color: #888;
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+  width: 100%;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.253);
+}
+select {
+  cursor: pointer;
+
 }
 
+.complete {
+  transition: 0.5s;
+  background-color: rgb(79, 240, 101);
+ 
+}
+.complete:hover {
+  transition: 0.5s;
+  background-color: rgb(3, 158, 67);
+
+}
+.remove {
+  transition: 0.5s;
+  background-color: rgb(151, 35, 35);
+}
+.remove:hover {
+  transition: 0.5s;
+  background-color: rgb(255, 0, 0);
+}
