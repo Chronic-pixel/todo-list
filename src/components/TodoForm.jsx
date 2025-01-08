@@ -3,15 +3,16 @@ import React, { useState } from 'react';
 
 
 
-const TodoForm = () => {
-    const [value, setValue] = useState('')
-    const [category, setCategory] = useState ('')
+const TodoForm = ({addTodo}) => {
+    const [value, setValue] = useState('');
+    const [category, setCategory] = useState ('');
 
     const handleSubmit = (e) => {
-      e.preventDefault()
+      e.preventDefault();
       if(!value || !category) return;
-      setValue('')
-      setCategory('')
+      addTodo(value, category);
+      setValue('');
+      setCategory('');
       console.log(value, category);
     };
   return (

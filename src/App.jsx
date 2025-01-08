@@ -5,24 +5,7 @@ import TodoForm from './components/TodoForm';
 
 function App() {
   const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "teste 1",
-      category: "trampo",
-      isCompleted: false,
-    },
-    {
-      id: 2,
-      text: "teste 2",
-      category: "Estudo",
-      isCompleted: false,
-    },
-    {
-      id: 3,
-      text: "teste 3",
-      category: "Pessoal",
-      isCompleted: false,
-    },
+   
   ]);
 
   const addTodo = (text, category) => {
@@ -36,16 +19,21 @@ function App() {
 
     setTodos(newTodos);
   };
+  const removeTodo = (id) => {
+    const newTodos = [...todos]
+    const filteredTodos = newTodos.filter((todo) => todo.id !== id ? todo : null);
+    setTodos(filteredTodos);
+  };
 
   return (
     <div className='App'>
       <h1> To-do List</h1>
       <div className='todo-list'>
         {todos.map((todo) => (
-           <Todo key={todo.id} todo={todo} />
+           <Todo key={todo.id} todo={todo} removeTodo={removeTodo} />
         ))}
       </div>
-      <TodoForm />
+      <TodoForm addTodo={addTodo} />
     </div>
   );
 };

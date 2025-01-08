@@ -6,8 +6,7 @@ body {
   background-image: url('./img/kevin-james-meme-1749606876.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  
+  background-attachment: fixed;
 }
 .App {
   
@@ -18,9 +17,9 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   border: 3px solid rgb(255, 255, 255);
-  
+  box-shadow:  0 0 10px black;
 }
-h1 {
+h1, h2, p {
   text-align: center;
   
 }
@@ -47,6 +46,7 @@ button {
   cursor: pointer;
   color: aliceblue;
   font-weight: bold;
+  margin-right: 8px;
 }
 
 button:hover {
@@ -89,4 +89,21 @@ select {
 .remove:hover {
   transition: 0.5s;
   background-color: rgb(255, 0, 0);
+}
+
+.todo-form {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom:  1px solid rgba(255, 255, 255, 0);
+}
+
+.todo {
+  background-color: rgba(255, 255, 255, 0.253);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
